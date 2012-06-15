@@ -5,19 +5,25 @@
 {% block css %}
 #question{
 text-align:center;
-width:700px;
+width:100%;
 }
-td{
+td,th{
 padding:5px 150px 5px 5px;
 }
 {% endblock %}
 
 {% block content %}
-    <p>Here's our list of most awesome things!</p>
+    <p>Here's our list of most awesome things!  (Displaying {{things|length}} things of {{number_of_things}})</p>
     <div id="question">
      <table>
+      <tr>
+        <th>#</th>
+        <th>Score (0-1.0)</th>
+        <th>Thing Name</th>
+      </tr>
       {% for thing in things %}
       <tr>
+        <td>{{forloop.counter}}</td>
         <td>{{thing.current_score|floatformat:2}}</td>
         <td>{{thing}} ({{thing.times_won}} upvotes)</td>
        </tr>
