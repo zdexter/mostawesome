@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Most Awesome Thing</title>
+    <style type="text/css">
+    #wrapper{
+        width:800px;
+    }
+    #question {
+        width:40%;
+    }
+    .left {
+        float:left;
+    }
+    .right{
+        float:right;
+    }
+    {% block css %}{% endblock %}
+    </style>
+  </head>
+  <body>
+   <div id="wrapper">
+    <h1>Most Awesome Thing</h1>
+    <p>
+      {% block menu %}<a href="{% url top %}">See our list of most awesome things!</a>{% endblock %}
+       or <a href="{% url thing_add %}">Add your own awesome thing</a>
+    </p>
+    {% block content %}{% endblock %}
+   </div>
+  </body>
+</html>

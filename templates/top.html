@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block menu %}<a href="{% url home %}">Back to the home page</a>{% endblock %}
+
+{% block css %}
+#question{
+text-align:center;
+width:700px;
+}
+td{
+padding:5px 150px 5px 5px;
+}
+{% endblock %}
+
+{% block content %}
+    <p>Here's our list of most awesome things!</p>
+    <div id="question">
+     <table>
+      {% for thing in things %}
+      <tr>
+        <td>{{thing.current_score|floatformat:2}}</td>
+        <td>{{thing}} ({{thing.times_won}} upvotes)</td>
+       </tr>
+      {% endfor %}
+      </table>
+    </div>
+{% endblock %}

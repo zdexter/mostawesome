@@ -1,0 +1,102 @@
+[
+  {
+    "pk": 1, 
+    "model": "app.thing", 
+    "fields": {
+      "current_score": 0.8333333333333334, 
+      "times_defeated": 1, 
+      "times_won": 5, 
+      "name": "Making new friends"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "app.thing", 
+    "fields": {
+      "current_score": 0.5, 
+      "times_defeated": 4, 
+      "times_won": 4, 
+      "name": "Cycling the Bay Area"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "app.thing", 
+    "fields": {
+      "current_score": 0.5, 
+      "times_defeated": 1, 
+      "times_won": 1, 
+      "name": "Friends"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "app.thing", 
+    "fields": {
+      "current_score": 0.3333333333333333, 
+      "times_defeated": 4, 
+      "times_won": 2, 
+      "name": "Fun"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "app.thing", 
+    "fields": {
+      "current_score": 0.16666666666666666, 
+      "times_defeated": 5, 
+      "times_won": 1, 
+      "name": "Food"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "app.thing", 
+    "fields": {
+      "current_score": 0.6, 
+      "times_defeated": 2, 
+      "times_won": 3, 
+      "name": "Beer"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "app.thing", 
+    "fields": {
+      "current_score": 0.999001996007984, 
+      "times_defeated": 1, 
+      "times_won": 1001, 
+      "name": "Working at Stripe"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "app.thing", 
+    "fields": {
+      "current_score": 0.25, 
+      "times_defeated": 3, 
+      "times_won": 1, 
+      "name": "San Francisco"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "app.thing", 
+    "fields": {
+      "current_score": 0.8333333333333334, 
+      "times_defeated": 1, 
+      "times_won": 5, 
+      "name": "smashthestack.io"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "app.thing", 
+    "fields": {
+      "current_score": 0.4, 
+      "times_defeated": 3, 
+      "times_won": 2, 
+      "name": "Surfing"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>Please click on the thing you consider more awesome.</p>
+    <div id="question">
+      <form action="#" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Add this thing">
+      </form>
+    </div>
+{% endblock %}

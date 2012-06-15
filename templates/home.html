@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>Please click on the thing you consider more awesome.</p>
+    <div id="question">
+      <form action="#" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <p class="left">
+            <button type="submit" name="_thing1chosen">{{thing1}}</button>
+        </p>
+        <p class="right">
+            <button type="submit" name="_thing2chosen">{{thing2}}</button>
+        </p>
+      </form>
+    </div>
+{% endblock %}
