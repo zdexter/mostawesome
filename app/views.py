@@ -10,13 +10,13 @@ from .forms import ThingForm
 def top(request):
     number_of_things = Thing.objects.count()
     """
-    Display an item of it's been compared
-        a number of times equivalent to display_wall
-    This prevents things like:  once-compared items from showing up with a current_score of 1.0 or 0.
+    Display an item IFF it has been compared a number of times equivalent to display_wall.
+    This prevents things like:  once-compared items from showing up with a current_score 
+    of 1.0 or 0.
     Thought:  The smaller the set of data, the more important it could be to keep track
         of how many *unique* comparisons have been done; i.e. how many *different*
-        items something has been compared to.  I would be interest to know exactly how much less of
-        a problem this might become as the size of the data set grows.
+        items something has been compared to.  I would be interest to know exactly how much
+        less of a problem this might become as the size of the data set grows.
     """
     display_wall = number_of_things * 0.2
 
